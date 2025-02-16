@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&display=swap');
+
+body {
+    font-family: "Comfortaa";
+    margin: 0%;
+    cursor: context-menu;
+}
+
+.parent {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid yellow;
+}
+
+.main-content {
+    margin-left: 60px;
+    z-index: 19;
+}
+
+h5 {
+    margin: 0px;
+    color: #476EF7;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+.wave {
+    height: 50px;
+    width: 50px;
+}
+
+.solid-circle {
+    height: 750px;
+    width: 750px;
+    background: #476EF7;
+    border-radius: 50%;
+    position: absolute;
+    right: -325px;
+    top: -70px;
+    z-index: 2;
+}
+
+.logo {
+    width: 350px;
+    height: 350px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+.header-home {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 10px 0px 10px 1px;
+    font-size: 50px;
+    background-color: orange;
+    top: 0px;
+    width: 100%;
+    z-index: 20;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .navbar {
+    width: 250px;
+    display: block;
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 6px;
+        background-color: aqua;
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index: 5;
+    }
+}
+
+#menu-btn {
+    margin-right: 8px;
+    background: none;
+    padding: 6px 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31px;
+    z-index: 5;
+}
+
+#menu-btn .bar1, #menu-btn .bar2, #menu-btn .bar3 {
+    width: 35px;
+    height: 6px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 0;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(151, 178, 215);
+    overflow-x: hidden;
+    padding-top: 60px;
+    font-size: 30px;
+    display: none;
+}
+
+#navbar {
+    color: white;
+    text-decoration: none;
+}
+
+.home-btn , .history-btn , .about-us-btn , .issue-btn , .sugg-btn , .donate-btn {
+    color: white;
+    width: 100%;
+    padding: 15px 20px 20px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-btn:hover , .history-btn:hover , .about-us-btn:hover , .issue-btn:hover , .sugg-btn:hover , .donate-btn:hover {
+    color: aqua;
+    background-color: rgb(110, 142, 188);
+    width: 100%;
+    a {
+        color: aqua;
+    }
+}
+
+#name {
+    color: #476EF7;
+    font-size: 100px;
+}
+
+.input-name {
+    font-size: 30px;
+    font-family: "comfortaa";
+    text-transform: capitalize;
+    border: 1px solid rgba(0,0,0,0.20);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.input-name:focus::placeholder {
+    transform: translateY(-14px);
+    font-size: 18px;
+    color: #999;
+    transition: ease 0.5s;
+}
+
+.login-btn {
+    border: 1px solid rgba(0,0,0,0.20);
+    background: #476EF7;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.login-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "comfortaa";
+}
+
+.login-btn a:hover {
+    color: rgb(57, 255, 47);
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.wallet {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 370px;
+}
+
+@media only screen and (max-width: 600px) {
+    .solid-circle {
+        background-color: rgba(0,0,0);
+        position: absolute;
+        right: -530px;
+        top: -390px;
+    }
+
+    .header-home {
+        margin-right: 0%;
+        padding-right: 0%;
+    }
+
+    .main-content {
+        margin: 120px 0px 0px 20px;
+        z-index: 500;
+    }
+
+    h5 {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .wallet {
+        left: 275px;
+        top: 10px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #menu-toggle:checked ~ .navbar {
+        width: 200px;
+        display: block;
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 6px;
+            background-color: aqua;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+    }
+
+    .home-btn:hover , .history-btn:hover , .about-us-btn:hover , .issue-btn:hover , .sugg-btn:hover , .donate-btn:hover {
+        color: aqua;
+        background-color: rgb(110, 142, 188);
+        width: 100%;
+        a {
+            color: aqua;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .input-name {
+        width: 250px;
+    }
+
+    .wallet {
+        left: 270px;
+        top: 14px;
+        width: 30px;
+        height: 30px;
+    }
+
+    @media only screen and (max-width: 350px) {
+        .wallet {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .input-name {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    @media only screen and (max-width: 992px) {
+        .solid-circle {
+            background-color: black;
+            right: -375px;
+            top: -315px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    @media only screen and (max-width: 775px) {
+        .main-content {
+            margin-top: 150px;
+        }
+    }
+}

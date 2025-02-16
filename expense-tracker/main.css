@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&display=swap');
+
+body {
+    margin: 0%;
+    font-family: "Comfortaa";
+    cursor: context-menu;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    margin: 0%;
+    padding: 8px;
+}
+
+.main-heading {
+    color: #476EF7;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.wallet {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 42px;
+    left: 135px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+#menu-btn {
+    margin-right: 8px;
+    margin-top: 12px;
+    background: none;
+    padding: 6px 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31px;
+}
+
+#menu-btn .bar1, #menu-btn .bar2, #menu-btn .bar3 {
+    width: 35px;
+    height: 6px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 1099;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(151, 178, 215);
+    overflow-x: hidden;
+    padding-top: 60px;
+    display: none;
+    color: white;
+    font-size: 20px;
+    z-index: -99;
+}
+
+#menu-bar:checked ~ .navbar {
+    width: 250px;
+    display: block;
+    z-index: 1009;
+}
+
+.input-elems {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    border: 1px solid #476EF7(0,0,0,0.2);
+    padding: 20px;
+    padding-right: 10px;
+    margin: 2% 0% 0% 18%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+.amount:focus::placeholder {
+    transform: translateY(-10px);
+    font-size: 12px;
+    color: #999;
+    transition: ease 0.5s;
+}
+
+.home-btn , .history-btn , .about-us-btn , .issue-btn , .sugg-btn , .donate-btn {
+    color: white;
+    padding: 15px 20px 20px 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-btn:hover , .history-btn:hover , .about-us-btn:hover , .issue-btn:hover , .sugg-btn:hover , .donate-btn:hover {
+    color: aqua;
+    background-color: rgb(110, 142, 188);
+    a {
+        color: aqua;
+    }
+}
+
+.home-btn {
+    margin-top: 20px;
+}
+
+.amount , .transaction , .date , .add-btn {
+    font-size: 20px;
+    font-family: "Comfortaa";
+    padding: 5px;
+    padding-bottom: 7px;
+    height: 25px;
+    margin: 10px 20px 10px 10px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.65);
+}
+
+.transaction {
+    padding : 0px 50px 0px 0px;
+    height: 39px;
+}
+
+.add-btn {
+    height: 38px;
+    width: 45px;
+    font-family: "Comfortaa";
+    border-radius: 50%;
+    border: none;
+    background: #476EF7;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.add-btn:active {
+    height: 38px;
+    width: 45px;
+    font-family: "Comfortaa";
+    border-radius: 50%;
+    border: none;
+    background: rgb(111, 240, 104);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 2% 0% 0% 18%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.total-income , .total-expense , .balance {
+    border: none;
+    background-color: #476EF7;
+    width: 180px;
+    margin: 0%;
+    padding-left: 15px;
+    border-radius: 4px;
+    height: 90px;
+    color: white;
+}
+
+.items p {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 0%;
+}
+
+.total-income-img {
+    height: 20px;
+    width: 20px;
+}
+
+.total-expense-img {
+    height: 25px;
+    width: 25px;
+}
+
+.balance-img {
+    height: 20px;
+    width: 20px;
+}
+
+.total-income-img , .total-expense-img , .balance-img {
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.delete {
+    background: url('recycle-bin.png') no-repeat center;
+    width: 40px;
+    height: 40px;
+    padding-left: 40px;
+    padding-top: 50px;
+    margin-left: 40px;
+    border: none;
+    background-size: contain;
+    background-color: rgb(43, 168, 36);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background: url('https://img.icons8.com/ios-filled/50/ffffff/trash.png') no-repeat center;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-color: red;
+}
+
+table {
+    width: 65%;
+    margin: 3% 0% 5% 18%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px black;
+    border-collapse: collapse;
+}
+
+.table-headings th {
+    padding: 15px 10px;
+    background-color: #476EF7;
+    color: white;
+
+}
+
+tr {
+    height: 75px;
+}
+
+.transaction-type {
+    padding-left: 95px;
+}
+
+.transaction-date {
+    padding-left: 85px;
+}
+
+.transaction-amount {
+    padding-left: 65px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        background-color: black;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-heading {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    .wallet {
+        height: 25px;
+        width: 25px;
+        left: 89px;
+        top: 26px;
+    }
+
+    #menu-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 31px;
+    }
+
+    #menu-btn .bar1, #menu-btn .bar2, #menu-btn .bar3 {
+        width: 30px;
+        height: 6px;
+        margin-bottom: 9px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        transition: 0.3s;
+        z-index: 1099;
+    }
+
+    .input-elems {
+        width: auto;
+        margin: 5%;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+    }
+
+    .amount , .transaction , .date , .add-btn {
+        width: 300px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .add-btn {
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        width: 125px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .add-btn:active {
+        width: 125px;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .transaction {
+        width: 285px;
+        font-size: 15px;
+    }
+
+    .items {
+        display: flex;
+        font-size: 10px;
+        margin: 0% 4% 0%;
+        background-color: black;
+        width: 90px;
+    }
+
+    .total-income , .total-expense , .balance {
+        margin-right: 20px;
+        background-color: black;
+        width: 100px;
+        height: 70px;
+    }
+
+    .total-income-img , .total-expense-img , .balance-img {
+        margin-left: 5px;
+        margin-bottom: 6px;
+        padding-right: 5px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .total-expense-img {
+        margin-left: 3%;
+    }
+
+    .total-income p , .total-expense p , .balance p {
+        font-size: 15px;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        width: 187px;
+        font-size: 15px;
+    }
+
+    table {
+        zoom: 1.1;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 10px;
+        height: 300px;
+        border-collapse: collapse;
+    }
+
+    .table-headings th {
+        padding: 0px 10px;
+        background-color: black;
+        color: white;
+    }
+    
+    tr {
+        height: 35px;
+    }
+    
+    .transaction-amount , .transaction-type , .transaction-date , .delete {
+        padding: 0%;
+        margin: 0%;
+        font-size: 13px;
+    }
+
+    .transaction-type {
+        padding-left: 20px;
+    }
+    
+    .transaction-date {
+        padding-left: 15px;
+    }
+    
+    .transaction-amount {
+        padding-left: 5px;
+    }
+
+    .delete {
+        margin: 0% 0% 0% 16%;
+        padding: 0%;
+        height: 30px;
+        width: 20px;
+        background-color: red;
+    }
+
+    .delete:hover {
+        background: url('https://img.icons8.com/ios-filled/50/ffffff/trash.png') no-repeat center;
+        width: 20px;
+        height: 25px;
+        margin: 0% 0% 0% 16%;
+        padding: 0%;
+        background-size: contain;
+        background-color: red;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    @media only screen and (max-width: 1023px){
+        .input-elems {
+            width: auto;
+            margin: 25px;
+            display: flex;
+            justify-content:center;
+        }
+
+        .amount , .transaction , .date {
+            width: 190px;
+        }
+
+        .add-btn {
+            display: flex;
+            justify-content: center;
+            border-radius: 0%;
+            padding: 0px 70px;
+        }
+
+        .total-income , .total-expense , .balance {
+            margin-left: 20px;
+            height: 120px;
+        }
+
+        .total-income-img , .total-expense-img , .balance-img {
+            padding: 20px;
+            margin-left: 0px;
+        }
+
+        .items {
+            margin-left: 115px;
+        }
+
+
+        #menu-bar:checked ~ .navbar {
+            width: 305px;
+            font-size: 30px;
+        }
+
+        table {
+            font-size: 20px;
+        }
+
+        .transaction-amount , .transaction-type , .transaction-date , .delete {
+            padding: 0%;
+            margin: 0%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    @media only screen and (max-width: 1400px){
+        .input-elems {
+            margin-left: 75px;
+            width: max-content;
+        }
+
+        .items {
+            margin-left: 60px;
+        }
+
+        #menu-bar:checked ~ .navbar {
+            font-size: 30px;
+            width: auto;
+        }
+
+        table {
+            zoom: normal;
+            margin: 30px;
+            font-size: 30px;
+            width: auto;
+        }
+    }  
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="main-heading">
+            Expense <br>Tracker
+        </a>
+        <img src="spending.png" class="wallet">
+        <input type="checkbox" id="menu-bar" class="menu-bar">
+            <label for="menu-bar" id="menu-btn">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </label>
+
+            <div id="navbar" class="navbar">
+                <div class="home-btn"><a href="home.html" class="home-btn">Home</a><br></div>
+                <div class="history-btn"><a href="#" class="history-btn">History</a><br></div>
+                <div class="about-us-btn"><a href="https://www.instagram.com/_.raammm_/" class="about-us-btn">About Us</a><br></div>
+                <div class="issue-btn"><a href="mailto:hanuseeni100@gmail.com" class="issue-btn">Raise An Issue</a><br></div>
+                <div class="sugg-btn"><a href="mailto:hanuseeni100@gmail.com" class="sugg-btn">Suggestions</a><br></div>
+                <div class="donate-btn"><a href="https://razorpay.me/@hanuram" class="donate-btn">Buy Me A Coffee</a><br></div>
+            </div>
+    </div>
+
+    <div class="input-elems">
+        <input type="number" placeholder="Amount" class="amount">
+        <select class="transaction">
+            <option value="null">Transaction</option>
+            <option value="option1">Income</option>
+            <option value="option2">Expense</option>
+        </select>
+        <input type="date" class="date">
+        <button class="add-btn">+</button>
+    </div>
+
+    <div class="items">
+        <div class="total-income">
+            <div class="main"><h3>Total Income</h3><img src="wallet-filled-money-tool.png" class="total-income-img"></div>
+            <p>₹11,500</p>
+        </div>
+        <div class="total-expense">
+            <div class="main"><h3>Total Expense</h3><img src="expenses.png" class="total-expense-img"></div>
+            <p>₹7,000</p>
+        </div>
+        <div class="balance">
+            <div class="main"><h3>Balance</h3><img src="rupee.png" class="balance-img"></div>
+            <p>₹4,500</p>
+        </div>
+    </div>
+
+    <table>
+        <tr class="table-headings">
+            <th>Amount</th>
+            <th>Transaction Type</th>
+            <th>Transaction Date</th>
+            <th>Action</th>
+        </tr>
+
+        <tr class="transaction-items">
+            <td class="transaction-amount">10,500</td>
+            <td class="transaction-type">Income</td>
+            <td class="transaction-date">01-01-2025</td>
+            <td><button class="delete" src="recycle-bin.png"></button></td>
+        </tr>
+
+        <tr class="transaction-items">
+            <td class="transaction-amount">1,000</td>
+            <td class="transaction-type">Income</td>
+            <td class="transaction-date">01-01-2025</td>
+            <td><button class="delete" src="recycle-bin.png"></button></td>
+        </tr>
+
+        <tr class="transaction-items">
+            <td class="transaction-amount">4,500</td>
+            <td class="transaction-type">Expense</td>
+            <td class="transaction-date">03-01-2025</td>
+            <td><button class="delete" src="recycle-bin.png"></button></td>
+        </tr>
+
+        <tr class="transaction-items">
+            <td class="transaction-amount">2,500</td>
+            <td class="transaction-type">Expense</td>
+            <td class="transaction-date">19-01-2025</td>
+            <td><button class="delete" src="recycle-bin.png"></button></td>
+        </tr>
+
+    </table>
+</body>
+</html>
